@@ -1,0 +1,15 @@
+
+@mixin flexbox($flex: flex, $justifyContent: space-between, $alignItems: center) {
+    display: $flex;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $color-primary;
+}
