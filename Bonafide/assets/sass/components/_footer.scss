@@ -1,0 +1,111 @@
+@import "../variables";
+#footer{
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    padding: 57px 0 20px;
+    @media only screen and (max-width: 600px){
+        padding: 57px 20px 20px;
+    }
+
+    .footer__left , .footer__center , .footer__right{
+        padding: 0 30px;
+        @media only screen and (max-width: 992px){
+            padding: 0;
+        }
+    }
+    .footer__head h4{
+        color: $color-white;
+        margin-bottom: 43px;
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+    .footer__left_content{
+        @media only screen and (max-width: 600px){
+            margin-bottom: 50px;
+        }
+        
+        ul {
+            padding: 0;
+            li{
+                font-size: 20px;
+                line-height: 28px;
+                max-width: 420px;
+                display: flex;
+                align-items: center;
+                padding: 10px 0;
+                a{
+                    color: $color-white;
+                }
+                &:not(:last-child) {
+                    border-bottom: 1px solid grey;
+                }
+            }
+        }
+    }
+    .footer__center_content{
+        @media only screen and (max-width: 600px){
+            margin-bottom: 50px;
+        }
+        img{
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+    .footer__right_content{
+        @media only screen and (max-width: 600px){
+            margin-bottom: 50px;
+        }
+        .content__row{
+            display: flex;
+            margin-bottom: 10px;
+            .content_icon{
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                border: 1px solid $color-white;
+                margin-right: 11px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 17px;
+            }
+            .content_text{
+                font-size: 16px;
+                line-height: 28px;
+                font-weight: 400;
+                color: $color-white;
+            }
+        }
+        .content__social{
+            margin-top: 20px;
+            a{
+                margin-right: 25px;
+                &:hover svg path {
+                    fill: #cec27b;
+                }
+            }
+        }
+    }
+    .footer__copyright{
+        padding-top: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        color: $color-white;
+        font-size: 16px;
+        a{
+            color: $color-white;
+            line-height: 24px;
+            font-weight: 500;
+            
+        }
+    }
+    
+    
+}
