@@ -1,0 +1,134 @@
+#team{
+    
+    .team-slider{
+        margin: 80px auto 100px;
+        @media only screen and (max-width: 992px) {
+            margin: 60px auto 50px;
+        }
+        .team-slider-items{
+            ul{
+                margin: 0;
+                padding: 0;
+                display: grid;
+                grid-template-columns: repeat(2,44%);
+                grid-gap: 40px 115px;
+                justify-content: center;
+                @media only screen and (max-width: 992px) {
+                    grid-template-columns: 100%;
+                    grid-gap: 20px;
+                }
+            }
+        }
+        .card{
+            background-color: rgb(250, 250, 250);
+            width: 100%;
+            height: 272px;
+            border-radius: 18px;
+            box-shadow: 0 6px 14px rgba(8, 8, 8, 0.08);
+            display: flex;
+            flex-direction: column;
+            @media only screen and (max-width: 768px) {
+                height: 275px;
+            }
+            @media only screen and (max-width: 450px) {
+                height: 217px;
+            }
+            .card__body{
+                display: flex;
+                flex-direction: row;
+                height: 210px;
+                padding: 22px 32px 15px;
+                @media only screen and (max-width: 768px) {
+                    padding: 22px 15px 15px;
+                }
+                .image{
+                    width: 155px;
+                    height: 157px;
+                    margin-right: 21px;
+                    @media only screen and (max-width: 768px) {
+                        width: 30%;
+                        height: 30%;
+                    }
+                    @media only screen and (max-width: 450px) {
+                        margin-right: 15px;
+                        width: 120px;
+                        height: 120px;
+                    }
+                    img{
+                        width: 155px;
+                        height: 155px;
+                        object-fit: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 14px;
+                        margin-top: 4px;
+                        @media only screen and (max-width: 768px) {
+                            width: 140px;
+                            height: 160px;
+                        }
+                        @media only screen and (max-width: 450px) {
+                            width: 115px;
+                            height: 124px;
+                        }
+                    }
+                    
+                }
+                .details{
+                    margin: 15px 0 0;
+                    @media only screen and (max-width: 450px) {
+                        margin: 10px 0 0;
+                    }
+                    
+                    h5{
+                        color: $color-primary;
+                        font-size: 20px;
+                        line-height: 21px;
+                        font-weight: 600;
+                        margin-bottom: 5px;
+                        @media only screen and (max-width: 450px) {
+                            font-size: 16px;
+                            line-height: 17px;
+                            margin-bottom: 2px;
+                        }
+                        
+                    }
+                    .position{
+                        color: rgba(177,151,4,.96);
+                        font-size: 16px;
+                        line-height: 17px;
+                        margin-bottom: 20px;
+                        @media only screen and (max-width: 450px) {
+                            font-size: 12px;
+                            line-height: 13px;
+                            margin-bottom: 2px;
+                        }
+                        
+                    }
+                    .email , .mobile{
+                        color: $color-black;
+                        font-size: 14px;
+                        line-height: 21px;
+                        @media only screen and (max-width: 450px) {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+            .card__footer{
+                border-top: 1px solid rgba(51,92,103,.2);
+                margin: 6px 15px 0;
+                p{
+                    margin-top: 5px;
+                    text-align: right;
+                    margin-bottom: 22px;
+                    a{
+                        text-decoration: underline $color-primary!important;
+                        color: $color-primary;
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
