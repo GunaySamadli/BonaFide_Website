@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/sass/main.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-navbar">
+                <div class="header-logo">
+                    <a href="">
+                        <img src="./assets/image/logo.png" alt="Bonafide">
+                    </a>
+                </div>
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid ">
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">ABOUT</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        SERVICES
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Mehkemelerde temsilcilik</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Muqavile huququ</a></li>
+                                        <li><a class="dropdown-item" href="#">Korporativ huquq</a></li>
+                                        <li><a class="dropdown-item" href="#">Əmək və miqrasiya hüququ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">OUR TEAM</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        NEWS and PUBLICATIONS
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">NEWS</a></li>
+                                        <li><a class="dropdown-item" href="#">PUBLICATIONS</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact.html">CONTACT</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="search">
+                            <img src="./assets/image/search.png" alt="">
+                        </div>
+                        <div class="header__languages dropdown">
+                            <button class="btn btn-secondary dropdown-toggle langs-btn" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                AZ
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">EN</a></li>
+                            </ul>
+                        </div>
+                        <div class="responsive-icons">
+                            <img class="responsive-icon-hamburger" src="./assets/image/hamburger.png" alt="">
+                            <img class="responsive-icon-close" src="./assets/image/close.svg" alt="">
+                        </div>
+                    </div>
+                </nav>
+                <div class="search_open">
+                    <div class="search_body d-flex align-items-center">
+                        <input type="text" placeholder="Axtar" class="search-input form-control">
+                        <img class="search_body_icon" src="./assets/image/search.png" alt="">
+                    </div>
+                    <div class="close">
+                        <img src="./assets/image/close.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile__navbar">
+            <div class="mobile_langs">
+                <div class="mobile_lang">EN</div>
+            </div>
+            <div class="mobile-nav">
+                <ul class="mobile-list active" id="home">
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="mobile-nav-item ">
+                        <div class="d-flex align-items-center">
+                            <a class="mobile-nav-link" href="#">SERVICES</a>
+                            <div class="arrow">
+                                <img class="mobile-link active" data-target="service" src="./assets/image/downArrow.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link" href="#">OUR TEAM</a>
+                    </li>
+                    <li class="mobile-nav-item d-flex align-items-center">
+                        <a class="mobile-nav-link" href="#">NEWS and PUBLICATIONS</a>
+                        <div class="arrow">
+                            <img class="mobile-link" data-target="news" src="./assets/image/downArrow.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link" href="./contact.html">CONTACT</a>
+                    </li>
+                </ul>
+                <ul class=" mobile-list mobile-link-body" id="service">
+                    <div class="mobile-list-back mobile-link" data-target="home">
+                        <div class="mobile-list-back-body">
+                            <img src="./assets/image/leftArrow.png" alt="">
+                            Back
+                        </div>
+                    </div>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link" href="#">Mehkemelerde temsilcilik</a>
+                    </li>
+                    <li class="mobile-nav-item"><a class="mobile-nav-link" href="#">Muqavile huququ</a></li>
+                    <li class="mobile-nav-item"><a class="mobile-nav-link" href="#">Korporativ huquq</a></li>
+                    <li class="mobile-nav-item"><a class="mobile-nav-link" href="#">Əmək və miqrasiya hüququ</a>
+                    </li>
+                </ul>
+                <ul class=" mobile-list mobile-link-body" id="news">
+                    <div class="mobile-list-back mobile-link" data-target="home">
+                        <div class="mobile-list-back-body">
+                            <img src="./assets/image/leftArrow.png" alt="">
+                            Back
+                        </div>
+                    </div>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link" href="#">NEWS</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link" href="#">PUBLICATIONS</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Banner -->
+        <section id="banner">
+            <div class="banner" data-bs-bg="./assets/image/banner.svg"
+                style="background-image: url(./assets/image/banner.svg);">
+                <div class="container">
+                    <div class="banner__title">
+                        <h3>Our Team</h3>
+                        <p>
+                            BonaFide
+                            <span class="dot">.</span>
+                            OUR TEAM
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team Detail -->
+        <div id="teamDetail" data-bs-bg="http://bonafide.az/static/media/backgCs1400.14fbbc15.png">
+            <div class="title">
+                <h1 class="title__shadow">Our Team</h1>
+                <div class="title__visible">
+                    <div class="lines">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                    <h2 class="title__visible--header">Our Team</h2>
+                </div>
+            </div>
+            <div class="teamDetail__body">
+                <div class="container">
+                    <div class="member" >
+                        <div class="member__profile">
+                            <div class="head">
+                                <div class="head__image"><img
+                                        src="http://api.bonafide.az/storage/k4aicMEiSFDt5mYbA0igpv0XJRoTSDfkAELP1TUf.png"
+                                        alt="1"></div>
+                                <div class="head__details">
+                                    <div class="contact">
+                                        <h4 class="name">Samir Mahmudov</h4>
+                                        <p class="position">Managing Partner</p>
+                                        <p class="email">
+                                            <span>
+                                                <img src="./assets/icons/letterGolden.svg">
+                                            </span>
+                                            smahmudov@bonafide.az
+                                        </p>
+                                        <p class="mobile">
+                                            <span>
+                                                <img src="./assets/icons/phoneGolden.svg">
+                                            </span>
+                                            (012) 436 87 74
+                                        </p>
+                                    </div>
+                                    <div class="language">
+                                        <p class="name">Language skills</p>
+                                        <p>Azerbaijan</p>
+                                        <p>English</p>
+                                        <p>Russian</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>Samir Mahmudov is a managing partner with the firm. Prior to joining BONAFIDE, Samir
+                                    worked on several senior legal positions, including Of Counsel at OMNI Law Firm, a
+                                    senior prosecutor at Anti-Corruption Directorate under the Prosecutor General of the
+                                    Republic of Azerbaijan, etc.&nbsp;</p>
+                                <p>Samir represents major international and local corporations in various types of
+                                    commercial transactions, including real estate transactions, loans, sales, secured
+                                    transactions, carriage of goods and passengers, licensing and distribution
+                                    agreements. He regularly advises on various aspects of Azerbaijani corporate law
+                                    (including corporate finance, corporate governance, M&amp;A, etc.), securities and
+                                    commercial law. In addition, Samir is an experienced litigator and routinely
+                                    represents clients in civil and criminal litigations.</p>
+                                <p>Samir is a member of a Collegium of Advocates and is permitted to represent clients
+                                    in all court proceedings, including in the Supreme Court and Constitutional Court.
+                                </p>
+                                <p>Starting from 2016, Samir has been constantly teaching core legal subjects, such as
+                                    Civil Law, Civil Procedure, Corporate Law, International Business Transactions and
+                                    Law of Obligations at the leading Azerbaijani universities (Baku State University
+                                    and ADA University).</p>
+                                <p class="ql-align-justify">Samir holds bachelor’s and master’s degrees in law from Baku
+                                    State University and completed his LLM studies at Syracuse University College of
+                                    Law.</p>
+                                <p class="ql-align-justify"><br></p>
+                            </div>
+                        </div>
+                        <div class="member__blocks"><a href="/en/team/samir-mahmudov">
+                                <div class="member__blocks--block">
+                                    <div class="image-bag"><img src="./assets/icons/bag.svg"></div>
+                                    <div class="name">
+                                        <p>Samir Mahmudov</p>
+                                        <p>Managing Partner</p>
+                                    </div>
+                                </div>
+                            </a><a href="/en/team/arif-ayyubov">
+                                <div class="member__blocks--block">
+                                    <div class="image-bag"><img src="./assets/icons/bag.svg"></div>
+                                    <div class="name">
+                                        <p>Arif Ayyubov</p>
+                                        <p>Partner</p>
+                                    </div>
+                                </div>
+                            </a><a href="/en/team/kheyransa-aliyeva">
+                                <div class="member__blocks--block">
+                                    <div class="image-bag"><img src="./assets/icons/bag.svg"></div>
+                                    <div class="name">
+                                        <p>Kheyransa Aliyeva</p>
+                                        <p>Senior Associate</p>
+                                    </div>
+                                </div>
+                            </a><a href="/en/team/narmin-guliyeva">
+                                <div class="member__blocks--block">
+                                    <div class="image-bag"><img src="./assets/icons/bag.svg"></div>
+                                    <div class="name">
+                                        <p>Narmin Guliyeva</p>
+                                        <p>Junior Associate</p>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footer__main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div class="footer__left">
+                            <div class="footer__head">
+                                <h4>Browse</h4>
+                            </div>
+                            <div class="footer__left_content">
+                                <ul>
+                                    <li>
+                                        <a href="">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Our team</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="footer__center">
+                            <div class="footer__head">
+                                <h4>Accreditations</h4>
+                            </div>
+                            <div class="footer__center_content">
+                                <div class="certificates">
+                                    <div class="row ">
+                                        <div class="col-6 certificate-item">
+                                            <div class="certificate-item">
+                                                <img src="./assets/image/certificate1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="certificate-item">
+                                                <img src="./assets/image/certificate2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 certificate-item">
+                                            <div class="certificate-item">
+                                                <img src="./assets/image/legal.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="certificate-item">
+                                                <img src="./assets/image/certificate2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="footer__right">
+                            <div class="footer__head">
+                                <h4>Contact</h4>
+                            </div>
+                            <div class="footer__right_content">
+                                <div class="content__row">
+                                    <div class="content_icon">
+                                        <img src="./assets/icons/location.svg" alt="">
+                                    </div>
+                                    <p class="content_text">
+                                        12 Basti Bagirova str. (Maryam Plaza), Office No 409, Baku, Azerbaijan, AZ 1065
+                                    </p>
+                                </div>
+                                <div class="content__row">
+                                    <div class="content_icon">
+                                        <img src="./assets/icons/phone.svg" alt="">
+                                    </div>
+                                    <p class="content_text">
+                                        (+99412) 436 87 73
+                                    </p>
+                                </div>
+                                <div class="content__row">
+                                    <div class="content_icon">
+                                        <img src="./assets/icons/letter.svg" alt="">
+                                    </div>
+                                    <p class="content_text">
+                                        smahmudov@bonafide.az
+                                    </p>
+                                </div>
+                                <div class="content__social">
+                                    <a href="https://www.linkedin.com/company/bonafide-law-firm" class="icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.3367 15.9507L16.3407 15.95V10.082C16.3407 7.21133 15.7227 5 12.3667 5C10.7533 5 9.67067 5.88533 9.22867 6.72467H9.182V5.268H6V15.95H9.31333V10.6607C9.31333 9.268 9.57733 7.92133 11.302 7.92133C13.0013 7.92133 13.0267 9.51067 13.0267 10.75V15.9507H16.3367Z"
+                                                fill="#FFFFFF"></path>
+                                            <path d="M0.263672 5.31836H3.58101V16.0004H0.263672V5.31836Z"
+                                                fill="#FFFFFF">
+                                            </path>
+                                            <path
+                                                d="M1.92133 0C0.860667 0 0 0.860667 0 1.92133C0 2.982 0.860667 3.86067 1.92133 3.86067C2.982 3.86067 3.84267 2.982 3.84267 1.92133C3.842 0.860667 2.98133 0 1.92133 0V0Z"
+                                                fill="#FFFFFF"></path>
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.facebook.com/" class="icon"><svg width="9" height="16"
+                                            viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="facebook">
+                                            <path
+                                                d="M6.66503 2.65667H8.1257V0.112667C7.8737 0.078 7.00703 0 5.99769 0C3.89168 0 2.44901 1.32467 2.44901 3.75933V6H0.125V8.844H2.44901V16H5.29835V8.84467H7.52836L7.88236 6.00067H5.29769V4.04133C5.29835 3.21933 5.51969 2.65667 6.66503 2.65667V2.65667Z"
+                                                fill="white"></path>
+                                        </svg></a><a href="https://www.instagram.com/" class="icon"><svg width="16"
+                                            height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 4C5.791 4 4 5.791 4 8C4 10.209 5.791 12 8 12C10.209 12 12 10.209 12 8C12 5.791 10.209 4 8 4ZM8 10.5C6.622 10.5 5.5 9.378 5.5 8C5.5 6.621 6.622 5.5 8 5.5C9.378 5.5 10.5 6.621 10.5 8C10.5 9.378 9.378 10.5 8 10.5Z"
+                                                fill="white"></path>
+                                            <path
+                                                d="M11 0H5C2.239 0 0 2.239 0 5V11C0 13.761 2.239 16 5 16H11C13.761 16 16 13.761 16 11V5C16 2.239 13.761 0 11 0ZM14.5 11C14.5 12.93 12.93 14.5 11 14.5H5C3.07 14.5 1.5 12.93 1.5 11V5C1.5 3.07 3.07 1.5 5 1.5H11C12.93 1.5 14.5 3.07 14.5 5V11Z"
+                                                fill="white"></path>
+                                            <path
+                                                d="M12.3001 4.23298C12.5945 4.23298 12.8331 3.99435 12.8331 3.69999C12.8331 3.40562 12.5945 3.16699 12.3001 3.16699C12.0057 3.16699 11.7671 3.40562 11.7671 3.69999C11.7671 3.99435 12.0057 4.23298 12.3001 4.23298Z"
+                                                fill="white"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="developed">
+                <span> Developed by </span>
+                <a href="https://webcoder.az/" target="_blank">
+                    Web Coder
+                    Agency</a>
+            </div>
+            <div class="copyright">© Copyright BonaFide </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
