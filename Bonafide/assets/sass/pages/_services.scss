@@ -63,6 +63,80 @@
 
 } 
 
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    @media only screen and (max-width: 768px) {
+        padding-top: 30px;
+    }
+    .title__shadow{
+        color: rgba(206,194,123,.11);
+        font-size: 88px;
+        line-height: 111px;
+        font-weight: 700;
+        @media only screen and (max-width: 768px) {
+            font-size: 44px;
+            line-height: 55px;
+        }
+        
+    }
+    .title__visible{
+        display: flex;
+        flex-direction: row;
+        margin-top: -57px;
+        @media only screen and (max-width: 768px) {
+            margin-top: -28px;
+        }
+        
+        .lines{
+            display: flex;
+            flex-direction: column;
+            margin: 19px 10px 0 0;
+            @media only screen and (max-width: 768px) {
+                margin: 8px 1px 0 0;
+            }
+            
+            .line1{
+                height: 3px;
+                width: 56px;
+                border-radius: 8px;
+                background-color: #cec27b;
+                @media only screen and (max-width: 768px) {
+                    height: 1px;
+                    width: 22px;
+                }
+            }
+            .line2{
+                height: 3px;
+                width: 56px;
+                border-radius: 8px;
+                background-color: #cec27b;
+                margin: 5px 10px 0 -17px;
+                @media only screen and (max-width: 768px) {
+                    height: 1px;
+                    width: 22px;
+                    margin: 5px 10px 0 -7px;
+                
+                }
+            }
+
+        }
+        h2{
+            color: $color-primary;
+            font-size: 44px;
+            line-height: 51px;
+            font-weight: 700;
+            @media only screen and (max-width: 768px) {
+                font-size: 24px;
+                line-height: 25px;
+            }
+            
+        }
+    }
+}
 // Service body
 
 #services{
@@ -75,80 +149,7 @@
         padding: 0 14px;
     }
     
-    .services__title{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 40px;
-        @media only screen and (max-width: 768px) {
-            padding-top: 30px;
-        }
-        .title__shadow{
-            color: rgba(206,194,123,.11);
-            font-size: 88px;
-            line-height: 111px;
-            font-weight: 700;
-            @media only screen and (max-width: 768px) {
-                font-size: 44px;
-                line-height: 55px;
-            }
-            
-        }
-        .title__visible{
-            display: flex;
-            flex-direction: row;
-            margin-top: -57px;
-            @media only screen and (max-width: 768px) {
-                margin-top: -28px;
-            }
-            
-            .lines{
-                display: flex;
-                flex-direction: column;
-                margin: 19px 10px 0 0;
-                @media only screen and (max-width: 768px) {
-                    margin: 8px 1px 0 0;
-                }
-                
-                .line1{
-                    height: 3px;
-                    width: 56px;
-                    border-radius: 8px;
-                    background-color: #cec27b;
-                    @media only screen and (max-width: 768px) {
-                        height: 1px;
-                        width: 22px;
-                    }
-                }
-                .line2{
-                    height: 3px;
-                    width: 56px;
-                    border-radius: 8px;
-                    background-color: #cec27b;
-                    margin: 5px 10px 0 -17px;
-                    @media only screen and (max-width: 768px) {
-                        height: 1px;
-                        width: 22px;
-                        margin: 5px 10px 0 -7px;
-                    
-                    }
-                }
-
-            }
-            h2{
-                color: $color-primary;
-                font-size: 44px;
-                line-height: 51px;
-                font-weight: 700;
-                @media only screen and (max-width: 768px) {
-                    font-size: 24px;
-                    line-height: 25px;
-                }
-                
-            }
-        }
-    }
+    
     .services__body{
         display: flex;
         flex-direction: row;
