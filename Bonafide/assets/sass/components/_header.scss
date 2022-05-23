@@ -7,7 +7,6 @@
     position: fixed;
     @media only screen and (max-width: 992px) {
         background-color: $color-primary;
-        position: static;
     }
     .header-navbar{
         display: flex;
@@ -16,6 +15,18 @@
         width: 100%;
         height: 80px;
         align-items: center;
+        .header-logo{
+            img{
+                object-fit: cover;
+                @media only screen and (max-width: 576px) {
+                    width: 80%;
+                }
+                @media only screen and (max-width: 450px) {
+                    width: 70%;
+                }
+                
+            }
+        }
         .nav-item{
             margin-right: 20px;
             .nav-link{
@@ -100,6 +111,42 @@
             display: flex;
             align-items: center;
         }
+        .search_open.responsive{
+            position: relative;
+            .search_body{
+                .search-input{
+                    margin: 0 17px 0 36px;
+                    background: hsla(0,0%,67.5%,.41);
+                    border-radius: 6px;
+                    border: 1px solid hsla(0,0%,67.5%,.41);
+                    height: 48px;
+                    @media only screen and (max-width: 768px) {
+                        width: 440px;
+                    }
+                    @media only screen and (max-width: 576px) {
+                        width: 300px;
+                    }
+                    @media only screen and (max-width: 400px) {
+                        width: 100%;
+                    }
+                    &::placeholder {
+                        color:  $color-white;
+                        
+                      }
+                }
+                .search_body_icon{
+                    display: none;
+                }
+            }
+            .close{
+                margin-left: 10px;
+                position: absolute;
+                cursor: pointer;
+                right: 30px;
+                top: 11px;
+            }
+        }
+
 
         .header__languages {
             margin-left: 20px;
@@ -140,6 +187,7 @@
         
     }
 
+    
 
     // Responsive Navbar
     .mobile__navbar{
@@ -225,6 +273,11 @@
     .mobile-list.active{
         display: block;
     }
+}
+
+.header.scrolled {
+    background-color: #335c67!important;
+    transition: background-color .2s!important;
 }
 
 

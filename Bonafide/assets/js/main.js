@@ -3,17 +3,34 @@
 const search = document.querySelector(".search");
 const navbar = document.querySelector(".navbar");
 const searchOpen = document.querySelector(".search_open");
+const searchOpenResponsive = document.querySelector(".search_open_responsive");
 const close = document.querySelector(".close");
+let headerLogo=document.querySelector(".header-logo");
+let headerNavbar=document.querySelector(".header-navbar");
+
 
 search.addEventListener("click", function () {
     navbar.style.display = "none";
     searchOpen.classList.toggle("active");
+
+    if(window.innerWidth < 992){
+        headerLogo.style.display="none";
+        searchOpen.classList.add("responsive");
+        headerNavbar.style.justifyContent="center"
+    }
 })
 
 close.addEventListener("click", function () {
     navbar.style.display = "block";
     searchOpen.classList.toggle("active");
+    if(window.innerWidth < 992){
+        headerLogo.style.display="block";
+        searchOpen.classList.remove("responsive");
+        headerNavbar.style.justifyContent="space-between"
+    }
 });
+
+
 
 
 // Responsive Navbar
@@ -35,6 +52,14 @@ hamburgerClose.addEventListener("click", function () {
     hamburgerMenu.style.display = "block";
     this.style.display = "none";
 });
+
+
+$(function () {
+    $(document).scroll(function () {
+      var $nav = $(".header");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
 
 
 
@@ -62,6 +87,32 @@ mobileLinks.forEach(mobileLink => {
     };
 });
 
+
+// Tab Menu
+
+const serviceBlocks = Array.from(document.querySelectorAll(" ._blocks--block"));
+const serviceContents = Array.from(document.querySelectorAll("._content"));
+
+const clearActivesFromService = function () {
+    serviceBlocks.forEach(serviceBlock => {
+        serviceBlock.classList.remove("active");
+    });
+    serviceContents.forEach(serviceContent => {
+        serviceContent.classList.remove("active");
+    });
+};
+
+
+
+serviceBlocks.forEach(serviceBlock => {
+    serviceBlock.onclick = function () {
+        clearActivesFromService();
+        const targetId = serviceBlock.getAttribute("data-target");
+        const targetContent = document.getElementById(targetId);
+        serviceBlock.classList.add("active");
+        targetContent.classList.add("active")
+    };
+});
 
 
 

@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header id="header">
+    <header id="header" class="header">
         <div class="container">
             <div class="header-navbar">
                 <div class="header-logo">
@@ -161,11 +161,14 @@
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                        class="dot-slider active" aria-current="true" aria-label="Slide 1">
+                    </button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
+                        class="dot-slider" aria-label="Slide 2">
+                    </button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+                        class="dot-slider" aria-label="Slide 3">
+                    </button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -198,7 +201,7 @@
                     <div class="carousel-item">
                         <div class="carousel-item-body">
                             <h2>
-                                Let us guide You to 
+                                Let us guide You to
                                 <span>
                                     Success.
                                 </span>
@@ -207,15 +210,13 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+                        <path
+                            d="M14.8968 0.818176L14.8968 3.57954L0.048584 3.57954L0.048584 5.42046L14.8968 5.42046L14.8968 8.18182L18.6089 4.5L14.8968 0.818176Z">
+                        </path>
+                    </svg>
                 </button>
             </div>
         </section>
@@ -320,7 +321,7 @@
                     </div>
                     <div class="services_more">
                         <div class="services_more_button">
-                            <a class="" href="/en/service/litigation">More</a>
+                            <a  href="./services.html">More</a>
                         </div>
                     </div>
                 </div>
@@ -333,35 +334,35 @@
                     </div>
                     <div class="container">
                         <div class="partners-slider">
-                            <div class="col-3 partners-slider-item">
+                            <div class=" partners-slider-item">
                                 <img src="http://api.bonafide.az/storage/ulgKnRMVhKh8pkhXlwCa6xczxyLqL8bncx4iE5WH.svg"
                                     alt="">
                             </div>
-                            <div class="col-3 partners-slider-item">
+                            <div class=" partners-slider-item">
                                 <img src="http://api.bonafide.az/storage/rj9UPOzzlCTW8GXYrPxgywThQk4fwu8AxjU8IvpY.png"
                                     alt="">
                             </div>
-                            <div class="col-3 partners-slider-item">
+                            <div class=" partners-slider-item">
                                 <img src="http://api.bonafide.az/storage/2PTUh6sv3FS7VPuE5P1moaIo1LWAJNZPRd827xZM.png"
                                     alt="">
                             </div>
-                            <div class="col-lg-3 partners-slider-item">
+                            <div class=" partners-slider-item">
                                 <img src="http://api.bonafide.az/storage/Q4iTSMNoqk9VgGJRhfVvssDlaaAtDEb48D0EsIYN.png"
                                     alt="">
                             </div>
-                            <div class="col-lg-3 partners-slider-item">
+                            <div class=" partners-slider-item">
                                 <img src="http://api.bonafide.az/storage/XKyQFx688z1gIXBp67zhM5JGKnLa13uWyLut224k.png"
                                     alt="">
                             </div>
-                            <div class="col-lg-3 partners-slider-item">
+                            <div class=" partners-slider-item">
                                 <img src="http://api.bonafide.az/storage/Sa7pxi3WcaKGONZjcW1TIYrzTNFzbUvPMi71kxGD.png"
                                     alt="">
                             </div>
-                            <div class="col-lg-3 partners-slider-item">
+                            <div class=" partners-slider-item">
                                 <img src="http://api.bonafide.az/storage/gGrx2Mv92OpxOewBAIi1SQiUReiHCzM1KxMzVLh9.png"
                                     alt="">
                             </div>
-                            <div class="col-lg-3 partners-slider-item">
+                            <div class=" partners-slider-item">
                                 <img src="http://api.bonafide.az/storage/kVxSMp3TdsnOj4iQPF25j1dufp1shWjecqGQOOuW.png"
                                     alt="">
                             </div>
@@ -374,7 +375,7 @@
     <footer id="footer">
         <div class="footer__main">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-between">
                     <div class="col-lg-4 col-12">
                         <div class="footer__left">
                             <div class="footer__head">
@@ -395,7 +396,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-12">
+                    <div class="col-lg-3 col-12">
                         <div class="footer__center">
                             <div class="footer__head">
                                 <h4>Accreditations</h4>
@@ -403,22 +404,22 @@
                             <div class="footer__center_content">
                                 <div class="certificates">
                                     <div class="row ">
-                                        <div class="col-6 certificate-item">
+                                        <div class="col-lg-6 col-3">
                                             <div class="certificate-item">
                                                 <img src="./assets/image/certificate1.jpg" alt="">
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-lg-6 col-3">
                                             <div class="certificate-item">
                                                 <img src="./assets/image/certificate2.jpg" alt="">
                                             </div>
                                         </div>
-                                        <div class="col-6 certificate-item">
+                                        <div class="col-lg-6 col-3">
                                             <div class="certificate-item">
                                                 <img src="./assets/image/legal.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-lg-6 col-3">
                                             <div class="certificate-item">
                                                 <img src="./assets/image/certificate2.jpg" alt="">
                                             </div>

@@ -139,7 +139,7 @@
 }
 // Service body
 
-#services{
+#contents{
     background-color: rgb(250, 250, 250);
     background-image: url("http://bonafide.az/static/media/backgs1100-2.e92b9096.png");
     background-repeat: no-repeat;
@@ -150,12 +150,13 @@
     }
     
     
-    .services__body{
+    .content__body{
         display: flex;
         flex-direction: row;
         padding-top: 54px;
         padding-bottom: 96px;
-        .service__content{
+        ._content{
+            display: none;
             @media only screen and (max-width: 768px) {
                 margin-bottom: 30px;
             }
@@ -191,8 +192,23 @@
                     }
                 }
             }
+            h6{
+                color: $color-black;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+            }
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba(0, 0, 0, 0.9);
+            }
         }
-        .service__blocks{
+        ._content.active{
+            display: block;
+        }
+        ._blocks{
             @media only screen and (max-width: 768px) {
                 display: grid;
                 grid-template-columns: repeat(2,50%);
@@ -202,7 +218,7 @@
                 margin: 0;
             }
             
-            .service__blocks--block {
+            ._blocks--block {
                 display: flex;
                 align-items: center;
                 padding-left: 15px;
@@ -211,6 +227,7 @@
                 background: $color-primary;
                 border-radius: 18px;
                 margin-bottom: 20px;
+                cursor: pointer;
                 @media only screen and (max-width: 768px) {
                     display: flex;
                     flex-direction: column;
