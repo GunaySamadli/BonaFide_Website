@@ -1,3 +1,10 @@
+$(function () {
+    $(document).scroll(function () {
+      var $nav = $(".header");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+});
+
 // Search
 
 const search = document.querySelector(".search");
@@ -54,12 +61,7 @@ hamburgerClose.addEventListener("click", function () {
 });
 
 
-$(function () {
-    $(document).scroll(function () {
-      var $nav = $(".header");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-  });
+
 
 
 
