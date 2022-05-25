@@ -1,0 +1,67 @@
+#main{
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding-bottom: 50px;
+  }
+  .pages {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+  }
+  .page {
+    width: 28px;
+    height: 28px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+    font-size: 14px;
+    color: $color-black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .page:hover {
+    border: 1px solid #335C67;
+    color: #335C67;
+  }
+
+  .active {
+    border: 1px solid #335C67;
+    border-radius: 5px;
+  }
+
+  .btn {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    color: $color-black;
+    width: 28px;
+    height: 28px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+        fill: $color-black;
+    }
+  }
+  .btn:hover {
+    border: 1px solid #335C67;
+    color: #335C67;
+  }
+  .btn--icon {
+    height: 24px;
+    width: 24px;
+    stroke: rgba(0, 0, 0, 0.25);
+  }
+  .btn--icon:hover {
+    color: rgba(0, 0, 0, 0.25);
+  }
+
+}

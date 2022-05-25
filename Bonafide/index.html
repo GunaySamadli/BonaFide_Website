@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/sass/main.css">
 </head>
 
@@ -25,13 +25,14 @@
                 <nav class="navbar navbar-expand-lg ">
                     <div class="container-fluid ">
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">ABOUT</a>
+                            <ul class="navbar-nav nav" id="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link active" href="./index.html">ABOUT</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="./services.html"
+                                        id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
                                         SERVICES
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -44,10 +45,10 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">OUR TEAM</a>
+                                    <a class="nav-link" href="./team.html">OUR TEAM</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    <a class="nav-link dropdown-toggle" href="./news.html" id="navbarDropdownMenuLink"
                                         role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         NEWS and PUBLICATIONS
                                     </a>
@@ -98,11 +99,11 @@
             <div class="mobile-nav">
                 <ul class="mobile-list active" id="home">
                     <li class="mobile-nav-item">
-                        <a class="mobile-nav-link" href="#">ABOUT</a>
+                        <a class="mobile-nav-link active" href="./index.html">ABOUT</a>
                     </li>
                     <li class="mobile-nav-item ">
                         <div class="d-flex align-items-center">
-                            <a class="mobile-nav-link" href="#">SERVICES</a>
+                            <a class="mobile-nav-link" href="./services.html">SERVICES</a>
                             <div class="arrow">
                                 <img class="mobile-link active" data-target="service" src="./assets/image/downArrow.png"
                                     alt="">
@@ -110,10 +111,10 @@
                         </div>
                     </li>
                     <li class="mobile-nav-item">
-                        <a class="mobile-nav-link" href="#">OUR TEAM</a>
+                        <a class="mobile-nav-link" href="./team.html">OUR TEAM</a>
                     </li>
                     <li class="mobile-nav-item d-flex align-items-center">
-                        <a class="mobile-nav-link" href="#">NEWS and PUBLICATIONS</a>
+                        <a class="mobile-nav-link" href="./news.html">NEWS and PUBLICATIONS</a>
                         <div class="arrow">
                             <img class="mobile-link" data-target="news" src="./assets/image/downArrow.png" alt="">
                         </div>
@@ -255,73 +256,61 @@
                     </div>
                     <div class="services_body">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-lg-4 col-6">
-                                    <a href="" class="services_card">
-                                        <img src="./assets/icons/service.png" alt="">
-                                        <h5>Litigation</h5>
-                                        <p>We represent our clients in all court instances of Azerbaijan</p>
-                                        <div class="services_card_arrow">
-                                            <i class="fa-solid fa-arrow-right-long"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-4 col-6">
-                                    <a class="services_card">
-                                        <img src="./assets/icons/service.png" alt="">
-                                        <h5>Litigation</h5>
-                                        <p>We represent our clients in all court instances of Azerbaijan</p>
-                                        <div class="services_card_arrow">
-                                            <i class="fa-solid fa-arrow-right-long"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-4 col-6">
-                                    <a class="services_card">
-                                        <img src="./assets/icons/service.png" alt="">
-                                        <h5>Litigation</h5>
-                                        <p>We represent our clients in all court instances of Azerbaijan</p>
-                                        <div class="services_card_arrow">
-                                            <i class="fa-solid fa-arrow-right-long"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-4 col-6">
-                                    <a class="services_card">
-                                        <img src="./assets/icons/service.png" alt="">
-                                        <h5>Litigation</h5>
-                                        <p>We represent our clients in all court instances of Azerbaijan</p>
-                                        <div class="services_card_arrow">
-                                            <i class="fa-solid fa-arrow-right-long"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-4 col-6">
-                                    <a class="services_card">
-                                        <img src="./assets/icons/service.png" alt="">
-                                        <h5>Litigation</h5>
-                                        <p>We represent our clients in all court instances of Azerbaijan</p>
-                                        <div class="services_card_arrow">
-                                            <i class="fa-solid fa-arrow-right-long"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-4 col-6">
-                                    <a class="services_card">
-                                        <img src="./assets/icons/service.png" alt="">
-                                        <h5>Litigation</h5>
-                                        <p>We represent our clients in all court instances of Azerbaijan</p>
-                                        <div class="services_card_arrow">
-                                            <i class="fa-solid fa-arrow-right-long"></i>
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="services--blocks">
+                                <a href="./services.html" class="services_card">
+                                    <img src="./assets/icons/service.png" alt="">
+                                    <h5>Litigation</h5>
+                                    <p>We represent our clients in all court instances of Azerbaijan</p>
+                                    <div class="services_card_arrow">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </a>
+                                <a href="./services.html" class="services_card">
+                                    <img src="./assets/icons/service.png" alt="">
+                                    <h5>Litigation</h5>
+                                    <p>We represent our clients in all court instances of Azerbaijan</p>
+                                    <div class="services_card_arrow">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </a>
+                                <a href="./services.html" class="services_card">
+                                    <img src="./assets/icons/service.png" alt="">
+                                    <h5>Litigation</h5>
+                                    <p>We represent our clients in all court instances of Azerbaijan</p>
+                                    <div class="services_card_arrow">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </a>
+                                <a href="./services.html" class="services_card">
+                                    <img src="./assets/icons/service.png" alt="">
+                                    <h5>Litigation</h5>
+                                    <p>We represent our clients in all court instances of Azerbaijan</p>
+                                    <div class="services_card_arrow">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </a>
+                                <a href="./services.html" class="services_card">
+                                    <img src="./assets/icons/service.png" alt="">
+                                    <h5>Litigation</h5>
+                                    <p>We represent our clients in all court instances of Azerbaijan</p>
+                                    <div class="services_card_arrow">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </a>
+                                <a href="./services.html" class="services_card">
+                                    <img src="./assets/icons/service.png" alt="">
+                                    <h5>Litigation</h5>
+                                    <p>We represent our clients in all court instances of Azerbaijan</p>
+                                    <div class="services_card_arrow">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="services_more">
                         <div class="services_more_button">
-                            <a  href="./services.html">More</a>
+                            <a href="./services.html">More</a>
                         </div>
                     </div>
                 </div>
@@ -332,37 +321,37 @@
                     <div class="partners_head">
                         <h2>Partners</h2>
                     </div>
-                    <div class="container">
-                        <div class="partners-slider">
-                            <div class=" partners-slider-item">
+                    <div class="">
+                        <div class="partners-slider container">
+                            <div class=" partners-slider-item col-lg-3 col-md-6 col-12">
                                 <img src="http://api.bonafide.az/storage/ulgKnRMVhKh8pkhXlwCa6xczxyLqL8bncx4iE5WH.svg"
                                     alt="">
                             </div>
-                            <div class=" partners-slider-item">
+                            <div class=" partners-slider-item col-lg-3 col-md-6 col-12">
                                 <img src="http://api.bonafide.az/storage/rj9UPOzzlCTW8GXYrPxgywThQk4fwu8AxjU8IvpY.png"
                                     alt="">
                             </div>
-                            <div class=" partners-slider-item">
+                            <div class=" partners-slider-item col-lg-3 col-md-6 col-12">
                                 <img src="http://api.bonafide.az/storage/2PTUh6sv3FS7VPuE5P1moaIo1LWAJNZPRd827xZM.png"
                                     alt="">
                             </div>
-                            <div class=" partners-slider-item">
+                            <div class=" partners-slider-item col-lg-3 col-md-6 col-12">
                                 <img src="http://api.bonafide.az/storage/Q4iTSMNoqk9VgGJRhfVvssDlaaAtDEb48D0EsIYN.png"
                                     alt="">
                             </div>
-                            <div class=" partners-slider-item">
+                            <div class=" partners-slider-item col-lg-3 col-md-6 col-12">
                                 <img src="http://api.bonafide.az/storage/XKyQFx688z1gIXBp67zhM5JGKnLa13uWyLut224k.png"
                                     alt="">
                             </div>
-                            <div class=" partners-slider-item">
+                            <div class=" partners-slider-item col-lg-3 col-md-6 col-12">
                                 <img src="http://api.bonafide.az/storage/Sa7pxi3WcaKGONZjcW1TIYrzTNFzbUvPMi71kxGD.png"
                                     alt="">
                             </div>
-                            <div class=" partners-slider-item">
+                            <div class=" partners-slider-item col-lg-3 col-md-6 col-12">
                                 <img src="http://api.bonafide.az/storage/gGrx2Mv92OpxOewBAIi1SQiUReiHCzM1KxMzVLh9.png"
                                     alt="">
                             </div>
-                            <div class=" partners-slider-item">
+                            <div class=" partners-slider-item col-lg-3 col-md-6 col-12">
                                 <img src="http://api.bonafide.az/storage/kVxSMp3TdsnOj4iQPF25j1dufp1shWjecqGQOOuW.png"
                                     alt="">
                             </div>
@@ -511,13 +500,9 @@
             <div class="copyright">© Copyright BonaFide </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>

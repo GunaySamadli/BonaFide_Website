@@ -1,7 +1,12 @@
 .noresult{
     height: 342px;
     padding: 100px 50px;
-    margin-bottom: 100px;
+    margin: 100px 30px;
+    border: 1px solid #335c6780;
+    border-radius: 20px;
+    @media only screen and (max-width: 992px) {
+        border: none;
+    }
     .noresult__wrapper{
         display: flex;
         flex-direction: column;
@@ -26,6 +31,7 @@
             margin-bottom: 49px;
             width: 580px;
             height: 56px;
+            
             @media only screen and (max-width: 768px) {
                 width: 326px;
                 height: 45px;
@@ -59,6 +65,7 @@
             }
         }
         .noresult-button{
+           
             .button{
                 width: 250px;
                 height: 47px;

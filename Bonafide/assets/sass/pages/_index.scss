@@ -41,6 +41,10 @@
 }
 
 .carousel-item-body{
+    @media only screen and (max-width: 992px) {
+        height: 350px!important;
+    }
+    
     h2{
         color: $color-white;
         font-size: 43px;
@@ -60,9 +64,20 @@
             width: 319px;
             height: 84px;
         }
+
+        @media only screen and (max-width: 350px) {
+            width: 200px;
+            height: 80px;
+        }
         span{
             color: rgb(255, 194, 102);
         }
+    }
+
+    img{
+        height: 100%!important;
+        width: 100%;
+        object-fit: cover;
     }
 }
 // About
@@ -94,6 +109,9 @@
                 font-size: 14px;
                 line-height: 21px;
             }
+            @media only screen and (max-width: 500px) {
+                padding: 0 12px;
+            }
         }
     }
     
@@ -118,71 +136,128 @@
             }
         }
     }
-    .services_card{
+    .services--blocks{
+        display: grid;
         width: 100%;
-        height: 285px;
-        border: 1px solid $color-white;
-        border-radius: 14px;
-        background-color: $color-primary;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 15px 40px 45px;
-        margin-bottom: 40px;
-        transition: all .4s ease-in-out;
-        color: $color-white;
+        grid-template-columns: repeat(3,33%);
+        grid-gap: 52px 18px;
+        justify-content: center;
         @media only screen and (max-width: 992px) {
-            padding: 35px 5px 10px;
-            height: max-content;
+            grid-template-columns: repeat(2,50%);
+            grid-gap: 35px 15px;
+            padding-bottom: 20px;
         }
-        cursor: pointer;
-        &:hover{
-            background-color: $color-white;
-            box-shadow: 0 11px 28px 0 rgba(14, 13, 13, 0.11);
-            h5{
-                color: $color-secondary;
+        @media only screen and (max-width: 576px) {
+            grid-template-columns: repeat(2,48%);
+            grid-gap: 20px 15px;
+            justify-content: unset;
+        }
+        
+        .services_card{
+            width: 100%;
+            height: 285px;
+            border: 1px solid $color-white;
+            color: $color-white;
+            border-radius: 14px;
+            background-color: $color-primary;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-right: 20px;
+            padding: 15px 40px 45px;
+            transition: all .4s ease-in-out;
+            @media only screen and (max-width: 992px) {
+                padding: 35px 5px 10px;
+                height: max-content;
             }
-            p{
-                color: rgba(0,0,0,.69);
+            @media only screen and (max-width: 576px) {
+                height: auto;
+                padding: 20px 15px 25px;
+                margin-left: 0;
+            }
+            @media only screen and (max-width: 330px) {
+                padding: 5px 10px;
+            }
+           
+            cursor: pointer;
+            &:hover{
+                background-color: $color-white;
+                box-shadow: 0 11px 28px 0 rgba(14, 13, 13, 0.11);
+                h5{
+                    color: $color-secondary;
+                }
+                p{
+                    color: rgba(0,0,0,.69);
+                    
+                }
+            }
+            img{
+                width: 37px;
+                height: 35px;
+                margin-top: 11px;
+                margin-bottom: 10px;
+                @media only screen and (max-width: 500px) {
+                    width: 26px;
+                    height: 25px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                @media only screen and (max-width: 330px) {
+                    width: 21px;
+                    height: 21px;
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                }
+            }
+            h5{
+                font-size: 18px;
+                line-height: 27px;
+                font-weight: 700;
+                margin-bottom: 22px;
+                margin-top: 15px;
+                transition: all .4s ease-in-out;
+                @media only screen and (max-width: 500px) {
+                    font-size: 13px;
+                    line-height: 21px;
+                    margin-top: 8px;
+                }
+                @media only screen and (max-width: 330px) {
+                    font-size: 9px;
+                    line-height: 10px;
+                    margin-top: 5px;
+                }
                 
             }
-        }
-        h5{
-            font-size: 18px;
-            line-height: 27px;
-            font-weight: 700;
-            margin-bottom: 22px;
-            margin-top: 15px;
-            transition: all .4s ease-in-out;
-        }
-        p{
-            font-size: 14px;
-            line-height: 21px;
-            font-weight: 400;
-            margin: 0 15px;
-            transition: all .4s ease-in-out;
-            @media only screen and (max-width: 992px) {
-                display: none;
-            }
-        }
-
-        .services_card_arrow{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: $color-secondary;
-            margin-top: 35px;
-            position: absolute;
-            transform: translateY(209px);
-            @media only screen and (max-width: 992px) {
-                display: none;
+            p{
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 400;
+                margin: 0 15px;
+                transition: all .4s ease-in-out;
+                @media only screen and (max-width: 992px) {
+                    display: none;
+                }
             }
     
+            .services_card_arrow{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: $color-secondary;
+                margin-top: 35px;
+                position: absolute;
+                transform: translateY(209px);
+                @media only screen and (max-width: 992px) {
+                    display: none;
+                }
+        
+            }
         }
+        
     }
     .services_more{
         width: 97px;
@@ -192,6 +267,7 @@
         background-color: $color-white;
         margin: 0 auto 100px;
         padding: 8px 2px 5px;
+        margin-top: 40px;
         .services_more_button{
             text-align: center;
             a{
@@ -202,6 +278,7 @@
         }
         
     }
+    
     
 }
 
