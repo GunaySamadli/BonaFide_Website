@@ -2,19 +2,12 @@
     overflow: hidden;
     position: relative;
     .partners-slider-item{
-        width: 267px;
+        margin-right: 1rem;
+        width: calc(((100% + 1rem) / 4) - 1rem);
         height: 113px;
-        margin-right: 20px;
         @media only screen and (max-width: 992px) {
-            width: 340px !important;
+            // width: 340px !important;
             margin-right: 13px;
-        }
-
-        @media only screen and (max-width: 768px) {
-            width: 250px !important;
-        }
-        @media only screen and (max-width: 576px) {
-            width: 216px !important;
         }
         
     }
@@ -42,40 +35,46 @@
     .left{
         cursor: pointer;
         position: absolute;
-        right: 7%;
-        border: 1px solid rgba(0,0,0,.78);
+        top: 0px;
+        right: 70px;
+        border: 1px solid #c4c4c4;
+        color: #c4c4c4;
         border-radius: 3px;
         background-color: $color-white;
         padding: 8px 12px;
         z-index: 2;
+        
+        &:hover{
+            border: 1px solid rgba(0,0,0,.78);
+            color: rgba(0,0,0,.78);
+        }
+        @media only screen and (max-width: 1400px) {
+            top: 10px;
+        }
         @media only screen and (max-width: 992px) {
-            right: 10%;
-        }
-        @media only screen and (max-width: 768px) {
-            right: 12%;
-        }
-        @media only screen and (max-width: 576px) {
-            right: 15%;
-        }
-        @media only screen and (max-width: 450px) {
-            right: 18%;
-        }
-
-        @media only screen and (max-width: 330px) {
-            right: 20%;
+            top: 0px;
         }
     }
     .right{
         cursor: pointer;
         position: absolute;
-        top: 0;
-        right: 3%;
-        border: 1px solid rgba(0,0,0,.78);
+        top: 0px;
+        right: 30px;
+        border: 1px solid #c4c4c4;
+        color: #c4c4c4;
         border-radius: 3px;
         background-color: $color-white;
         padding: 8px 12px;
-        @media only screen and (max-width: 576px) {
-            right: 5%;
+
+        &:hover{
+            border: 1px solid rgba(0,0,0,.78);
+            color:rgba(0,0,0,.78);
+        }
+        @media only screen and (max-width: 1400px) {
+            top: 10px;
+        }
+        @media only screen and (max-width: 992px) {
+            top: 0px;
         }
     }
 }

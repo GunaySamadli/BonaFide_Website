@@ -20,6 +20,16 @@ for (let i = 0; i < menuLenMobile; i++) {
     }
 }
 
+const currlocFooter = location.href;
+const menuItemFooter = document.querySelectorAll('.footer-link');
+const menuLenFooter = menuItemFooter.length;
+for (let i = 0; i < menuLenFooter; i++) {
+    menuItemFooter[i].classList.remove('active');
+    if (menuItemFooter[i].href === currlocFooter) {
+        menuItemFooter[i].className = "footer-link  active";
+    }
+}
+
 // Search
 
 const search = document.querySelector(".search");
@@ -61,20 +71,24 @@ close.addEventListener("click", function () {
 const hamburgerMenu = document.querySelector(".responsive-icon-hamburger");
 const hamburgerClose = document.querySelector(".responsive-icon-close");
 const mobileNavbar = document.querySelector(".mobile__navbar");
+const mobileBackground=document.querySelector(".mobile-background");
 
 
 hamburgerMenu.addEventListener("click", function () {
     mobileNavbar.classList.toggle("active");
     this.style.display = "none";
     hamburgerClose.style.display = "block";
-    search.style.marginRight="-5px";
+    search.style.marginRight = "-5px";
+    mobileBackground.classList.add("active");
+
 });
 
 hamburgerClose.addEventListener("click", function () {
     mobileNavbar.classList.toggle("active");
     hamburgerMenu.style.display = "block";
     this.style.display = "none";
-    search.style.marginRight="0px"
+    search.style.marginRight = "0px";
+    mobileBackground.classList.remove("active");
 
 });
 
@@ -106,8 +120,8 @@ mobileLinks.forEach(mobileLink => {
 
 $(function () {
     $(document).scroll(function () {
-      var $nav = $(".header");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        var $nav = $(".header");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
 });
 

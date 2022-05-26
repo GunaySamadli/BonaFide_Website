@@ -32,8 +32,12 @@
                 display: flex;
                 align-items: center;
                 padding: 10px 0;
-                a{
+                .footer-link{
                     color: $color-white;
+                }
+                .footer-link.active{
+                    color: $color-white;
+                    font-weight: 700!important;
                 }
                 &:not(:last-child) {
                     border-bottom: 1px solid grey;
